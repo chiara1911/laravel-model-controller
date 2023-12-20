@@ -7,6 +7,22 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
+# Esercizio di oggi
+
+Oggi facciamo la nostra prima vera interazione con il database utilizzando l’ORM di Laravel.
+- Create un nuovo progetto Laravel 9 (dal template)
+- se  lo avete già va benissimo il nostro shop_db se no tramite phpMyAdmin create un nuovo database laravel_model_controller
+- solo se non avete già il db  Importate nel vostro database la tabella movies in allegato
+ - inserite le vostre credenziali per il database nel file .env
+- Create un model Movie
+es. php artisan make:model Movie
+- Create la rotta e un controller che gestirà la rotta / (home) e uno per i libri
+es. php artisan make:controller  PageController
+- All’interno della funzione index() del controller, recuperate tutti i film dal database e passateli alla view, che quindi li visualizzerà a schermo, tramite delle card.
+8. Stilare il layout nei dettagli con Sass
+BONUS:
+Creare rotta, link, aggiungere metodo show al controller, e pagina di dettaglio del movie
+
 ## Installazione Laravel
 
 ``` bash
@@ -51,4 +67,34 @@ git commit -m "first commit"
 npm
 git remote add origin your_git_url
 git push -u origin main
+
+
+#creo nuova repo su github da template
+#importo da vscode la repo
+#installo composer
+
+composer install
+
+
+#clono il file env.example e lo rinomino in .env
+
+#lancio il comando:
+
+php artisan key:generate
+
+
+#e si crea la key del progetto
+
+#infine
+
+npm install
+
+
+#lancio entrambi i server ( su due powershell diversi)
+
+npm run dev
+php artisan serve
 ```
+
+
+
