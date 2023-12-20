@@ -4,6 +4,8 @@
 
 @section('content')
 <main>
-    <h1>Home page</h1>
+   <div class="container">
+    <img src="{{ Vite::asset('resources/image/christmas.png') }}" alt="">
+   </div>
 </main>
 @endsection
